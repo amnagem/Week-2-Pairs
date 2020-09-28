@@ -20,7 +20,7 @@ namespace TEams.Classes
                 return $"{LastName}, {FirstName}";
             }
         }
-        private const double StartingSalary = 60000.00;
+        public const double startingSalary = 60000.00;
 
         public Employee(long employeeId, string firstName, string lastName, string email, Department department, string hireDate)
         {
@@ -30,7 +30,11 @@ namespace TEams.Classes
             this.Email = email;
             this.Department = department;
             this.HireDate = hireDate;
+            this.Salary = startingSalary;
         }
+        public Employee()
+        {
 
+        }
     }
 }

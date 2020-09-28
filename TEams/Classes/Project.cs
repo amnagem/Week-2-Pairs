@@ -18,6 +18,7 @@ namespace TEams.Classes
             this.Description = description;
             this.StartDate = startDate;
             this.DueDate = dueDate;
+            this.TeamMembers = new List<Employee>();
         }
     }
 }
